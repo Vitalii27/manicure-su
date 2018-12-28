@@ -1,0 +1,113 @@
+.action {
+  background-image: linear-gradient(90deg, rgb(243, 243, 243) 0%, rgb(249, 249, 249) 25%, rgb(255, 255, 255) 100%);
+  padding-top: 8.5rem;
+  padding-bottom: 8rem;
+  position: relative;
+
+  .container-fluid{
+    z-index: 3;
+    position: relative;
+  }
+  &_content {
+    text-align: center;
+    max-width: 130.5rem;
+    margin: 0 auto;
+    &-top {
+
+      font-size: 4rem;
+      line-height: 1.4;
+      span {
+        color: $red;
+        font-weight: 700;
+      }
+
+    }
+    h2{
+      font-size: 4rem;
+    }
+    h3{
+      font-size: 3.4rem;
+    }
+    h4{
+      font-size: 2.8rem;
+    }
+    &-period {
+      margin-top: 5rem;
+      font-size: 3.6rem;
+      line-height: 1.5;
+      color: $black;
+      font-weight: 400;
+      span{
+        font-weight: 700;
+        color: #ff0000;
+      }
+    }
+    &-time{
+      margin-top: 6.2rem;
+      font-size: 3rem;
+    }
+  }
+  &_form{
+    //margin-top: 7rem;
+    text-align: center;
+    max-width: 131rem;
+    margin: 7rem auto 0;
+    input{
+      border-color: #f03866 !important;
+    }
+  }
+  &_bottom-text{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 3rem;
+    border-bottom: 1px solid transparent;
+    transition: text-shadow .2s;
+    line-height: 1.2;
+    a{
+      color: $orange;
+      &:hover{
+        border-bottom: 1px dashed $orange;
+        text-shadow: 0 0 .1px $orange, 0 0 .1px $orange;
+      }
+    }
+  }
+  &_bg{
+    position: absolute;
+    left: 0;
+    top: 45%;
+  }
+}
+
+@media only screen and (max-width: $screen-xs-max) {
+  .action{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    &_content{
+      h1{
+        font-size: 3rem;
+      }
+      h2{
+        font-size: 2.6rem;
+      }
+      h3{
+        font-size: 2.2rem;
+      }
+      &-top{
+        font-size: 2.4rem;
+      }
+      &-period{
+        font-size: 2.8rem;
+        margin-top: 3rem;
+      }
+      &-time{
+        font-size: 2.8rem;
+      }
+    }
+    &_form{
+      margin-top: 4rem;
+
+    }
+  }
+
+}

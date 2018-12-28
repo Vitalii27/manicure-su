@@ -1,0 +1,167 @@
+.sub-section {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  //filter: blur(5px);
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  z-index: 2;
+  &--advantages {
+    background: linear-gradient(to right, #fdf6f9 0%, #fbecef 100%);
+
+    P {
+      color: $black !important;
+    }
+    strong {
+      font-size: 4rem;
+      color: $orange !important;
+    }
+  }
+  //&:before {
+  //    content: '';
+  //    position: absolute;
+  //    top: 0;
+  //    bottom: 0;
+  //    right: 0;
+  //    left: 0;
+  //    background-color: rgba($black, .7);
+  //}
+  &_content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 90rem;
+    margin: 0 auto;
+    p {
+      font-size: 3rem;
+      line-height: 1.6;
+      color: $white;
+    }
+    span {
+      color: $orange;
+      font-weight: 600;
+    }
+    div {
+      color: #f2f2f2;
+      font-size: 3rem;
+      margin-top: 1rem;
+    }
+  }
+  &_btn-block {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+}
+
+.sub-section--second {
+  .sub-section_content {
+    max-width: 105rem;
+  }
+  p {
+    font-size: 3.6rem;
+  }
+}
+
+.sub-section_link {
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-top: 4.5rem;
+  background-color: #f03866;
+}
+
+.sub-section--second_desc {
+  font-weight: 800;
+  color: $orange !important;
+}
+
+.back-money-section {
+  position: relative;
+}
+
+.img-girl {
+  position: absolute;
+  right: 20%;
+  top: 53%;
+  transform: translateY(-50%);
+  max-height: 40rem;
+}
+
+.back-money {
+  position: relative;
+  h2 {
+
+    font-size: 6rem;
+    color: #ef3865;
+    font-weight: 900;
+    font-family: 'Roboto';
+    text-shadow: 3px 5.196px 6px rgba(40, 40, 40, 0.18);
+    line-height: 1.2;
+
+  }
+  p {
+    margin-top: 1.5rem;
+    font-size: 3.6rem;
+    font-weight: 600;
+    font-family: 'Roboto';
+    color: $black;
+    line-height: 1.2;
+  }
+  div {
+    margin-top: 1.5rem;
+    color: #5b08ad;
+    font-size: 2.8rem;
+    font-weight: 400;
+    font-family: 'Roboto';
+    line-height: 1.2;
+  }
+  hr {
+    border-color: #d2d2d2;
+    max-width: 36rem;
+    margin: 2rem auto 2rem 0;
+    border: none;
+    background-color: #d2d2d2;
+    height: 2px;
+  }
+}
+
+@media only screen and (max-width: $screen-sm-max) {
+  .img-girl {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $screen-xs-max) {
+  .back-money {
+    text-align: center;
+    h2{
+      font-size: 3.6rem;
+    }
+    p{
+      font-size: 2.8rem;
+    }
+    div{
+      font-size: 2.2rem;
+    }
+    hr{
+      margin: 1.5rem auto;
+    }
+  }
+  .sub-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    &--advantages {
+      strong {
+        font-size: 2.5rem;
+
+      }
+    }
+    &_content {
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+}

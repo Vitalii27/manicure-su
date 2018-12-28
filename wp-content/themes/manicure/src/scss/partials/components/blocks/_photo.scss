@@ -1,0 +1,134 @@
+.photo {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  position: relative;
+  &_slider {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-top: 5rem;
+    &-link {
+      position: relative;
+      display: block;
+    }
+  }
+  &_slider-wrapp {
+
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all .25s;
+    img {
+      object-fit: cover;
+      max-width: 37.5rem;
+      max-height: 22rem;
+      border-radius: 20px;
+
+    }
+
+  }
+  &_img-name {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba($black, .3);
+    font-size: 14px;
+    padding: .4rem;
+    color: $white;
+    z-index: 5;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .slick-list {
+    padding-top: 9rem !important;
+    padding-bottom: 9rem !important;
+  }
+  .slick-current + .slick-active + .slick-active {
+    transition: all .25s;
+    transform: scale(1.69) !important;
+    z-index: 2;
+    position: relative;
+  }
+  .slick-current + .slick-active {
+    transition: all .25s;
+    transform: scale(1.295) !important;
+    position: relative;
+    z-index: 1;
+  }
+  .slick-current + .slick-active + .slick-active + .slick-active {
+    transition: all .25s;
+    transform: scale(1.295) !important;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.photo-new {
+  position: relative;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  .photo-bg-new {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100%;
+min-height: 35rem;
+  }
+  .photo_slider-link {
+    max-height: 50rem;
+    max-width: 30rem;
+    width: 100%;
+    height: 100%;
+    display: block;
+
+  }
+  .slick-slide{
+    margin-left: 1rem ;
+    margin-right: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: $screen-xs-max) {
+  .photo {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    .slick-current + .slick-active + .slick-active {
+      transition: all .25s;
+      transform: none !important;
+
+      position: relative;
+    }
+    .slick-current + .slick-active {
+      transition: all .25s;
+      transform: scale(1.3) !important;
+      position: relative;
+      z-index: 3;
+    }
+    .slick-list {
+      padding-top: 4rem !important;
+      padding-bottom: 4rem !important;
+    }
+    &_slider {
+      margin-top: 3rem;
+    }
+  }
+  .photo-new{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: $screen-xxs) {
+  .photo {
+    .slick-list {
+      padding-top: 2rem !important;
+      padding-bottom: 2rem !important;
+    }
+    &_slider {
+      margin-top: 1rem;
+    }
+  }
+
+}
